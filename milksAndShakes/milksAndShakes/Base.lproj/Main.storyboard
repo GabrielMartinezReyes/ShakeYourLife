@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WLk-fr-VJB">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dreams-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="milksAndShakes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RbS-jD-AIe">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fruktCell" rowHeight="100" id="CGy-ID-7hM" customClass="FruktTableViewCell" customModule="milksAndShakes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CGy-ID-7hM" id="6ty-v7-ZjT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLS-NX-d5v">
+                                                    <rect key="frame" x="8" y="5" width="359" height="89.666666666666671"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ananas" translatesAutoresizingMaskIntoConstraints="NO" id="CF7-1D-peK">
+                                                            <rect key="frame" x="10" y="4" width="80" height="80"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="80" id="Ace-Yh-TMm"/>
+                                                                <constraint firstAttribute="width" constant="80" id="Hdh-SA-aw1"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ananas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LU-RG-Dgp">
+                                                            <rect key="frame" x="98" y="5" width="253" height="79.666666666666671"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="6LU-RG-Dgp" secondAttribute="trailing" constant="8" id="D8j-L1-yA2"/>
+                                                        <constraint firstItem="CF7-1D-peK" firstAttribute="leading" secondItem="aLS-NX-d5v" secondAttribute="leading" constant="10" id="PWG-P2-9vl"/>
+                                                        <constraint firstItem="CF7-1D-peK" firstAttribute="centerY" secondItem="aLS-NX-d5v" secondAttribute="centerY" id="Qiq-1X-SYy"/>
+                                                        <constraint firstAttribute="bottom" secondItem="6LU-RG-Dgp" secondAttribute="bottom" constant="5" id="U70-ZG-5Uh"/>
+                                                        <constraint firstItem="6LU-RG-Dgp" firstAttribute="top" secondItem="aLS-NX-d5v" secondAttribute="top" constant="5" id="Zmu-NX-2Mu"/>
+                                                        <constraint firstItem="6LU-RG-Dgp" firstAttribute="leading" secondItem="CF7-1D-peK" secondAttribute="trailing" constant="8" id="jSp-hg-Sbq"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aLS-NX-d5v" firstAttribute="leading" secondItem="6ty-v7-ZjT" secondAttribute="leading" constant="8" id="18u-Lq-vjx"/>
+                                                <constraint firstItem="aLS-NX-d5v" firstAttribute="top" secondItem="6ty-v7-ZjT" secondAttribute="top" constant="5" id="2M4-g4-7Vd"/>
+                                                <constraint firstAttribute="bottom" secondItem="aLS-NX-d5v" secondAttribute="bottom" constant="5" id="2VM-vy-2lK"/>
+                                                <constraint firstAttribute="trailing" secondItem="aLS-NX-d5v" secondAttribute="trailing" constant="8" id="J8x-hn-DXM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="cellView" destination="aLS-NX-d5v" id="zEK-lq-HdO"/>
+                                            <outlet property="fruktImage" destination="CF7-1D-peK" id="uVX-Vu-WKF"/>
+                                            <outlet property="fruktLabel" destination="6LU-RG-Dgp" id="Bxa-39-V8b"/>
+                                            <segue destination="OEI-Au-VzJ" kind="show" identifier="detailSegue" id="OcJ-Ja-uBS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RbS-jD-AIe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KUO-DQ-SA4"/>
+                            <constraint firstItem="RbS-jD-AIe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ocu-0D-Jgx"/>
+                            <constraint firstItem="RbS-jD-AIe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="frE-hB-pHj"/>
+                            <constraint firstAttribute="bottom" secondItem="RbS-jD-AIe" secondAttribute="bottom" id="h5p-Qz-Ofc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dreams" id="hWQ-ee-hDc"/>
+                    <connections>
+                        <outlet property="tableview" destination="RbS-jD-AIe" id="Dun-9W-lUC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="193.5960591133005"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="4n9-cd-HK5">
+            <objects>
+                <viewController id="OEI-Au-VzJ" customClass="DetailViewController" customModule="milksAndShakes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4S7-S2-qvZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ice-cream" translatesAutoresizingMaskIntoConstraints="NO" id="dZs-Vh-dum">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ananas-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zo0-XP-cX6">
+                                <rect key="frame" x="8" y="136" width="359" height="501"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pAN-1k-AWU" firstAttribute="bottom" secondItem="Zo0-XP-cX6" secondAttribute="bottom" constant="141" id="2pZ-HR-j1D"/>
+                            <constraint firstItem="dZs-Vh-dum" firstAttribute="top" secondItem="pAN-1k-AWU" secondAttribute="top" id="IV4-fV-YJx"/>
+                            <constraint firstAttribute="bottom" secondItem="dZs-Vh-dum" secondAttribute="bottom" id="YNM-B8-6ox"/>
+                            <constraint firstItem="dZs-Vh-dum" firstAttribute="leading" secondItem="pAN-1k-AWU" secondAttribute="leading" id="g24-eH-zP6"/>
+                            <constraint firstItem="Zo0-XP-cX6" firstAttribute="centerX" secondItem="dZs-Vh-dum" secondAttribute="centerX" id="hJg-6x-ufe"/>
+                            <constraint firstItem="Zo0-XP-cX6" firstAttribute="leading" secondItem="pAN-1k-AWU" secondAttribute="leading" constant="8" id="rFf-db-wO2"/>
+                            <constraint firstItem="Zo0-XP-cX6" firstAttribute="top" secondItem="pAN-1k-AWU" secondAttribute="top" constant="48" id="uLr-4b-sql"/>
+                            <constraint firstItem="dZs-Vh-dum" firstAttribute="trailing" secondItem="pAN-1k-AWU" secondAttribute="trailing" id="xcv-bV-mM9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pAN-1k-AWU"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailImageView" destination="Zo0-XP-cX6" id="RVT-9m-ioQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZbB-v1-uLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1200.8" y="200.98522167487687"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rut-LK-r7r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WLk-fr-VJB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FYi-Yh-g77">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Eem-CA-I7a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W4F-5U-fCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-788" y="194"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ananas" width="800" height="534"/>
+        <image name="ananas-1" width="800" height="1198"/>
+        <image name="ice-cream" width="3648" height="5472"/>
+    </resources>
+</document>
